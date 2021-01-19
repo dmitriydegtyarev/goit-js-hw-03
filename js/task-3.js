@@ -2,22 +2,22 @@ const findBestEmployee = function(employees) {
   
   const nameValue = Object.entries(employees)
 
-    let workEmploy = [];
-    let nameEmploy = [];
+    let workEmployee = [];
+    let nameEmployee = [];
 
   for (const value of nameValue) {
 
-    if (value[1] < workEmploy) {
+    if (value[1] < workEmployee) {
       continue;      
     }
       
-    if (value[1] > workEmploy)
+    if (value[1] > workEmployee)
       
-    workEmploy = value[1];
-    nameEmploy = value[0];    
+    workEmployee = value[1];
+    nameEmployee = value[0];    
   }
   
-  return nameEmploy;
+  return nameEmployee;
 };
 
 
