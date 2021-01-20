@@ -16,8 +16,6 @@ const calculateTotalPrice = function (allProdcuts, productName) {
     if (product.name === productName) {
       return product.price * product.quantity;
     }
-
-
   }
 
   return 0;
